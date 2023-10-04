@@ -1,3 +1,19 @@
+// {
+//     "compile-hero.disable-compile-files-on-did-save-code": false
+// }
 {
-    "compile-hero.disable-compile-files-on-did-save-code": false
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+        "editor.defaultFormatter": "bysabi.prettier-vscode-standard"
+        // "editor.defaultFormatter": "bysabi.prettier-vscode-standard"
+
+    },
+    "[json]": {
+        "editor.defaultFormatter": "bysabi.prettier-vscode-standard"
+    },
+    // "[javascript]": {
+        // "editor.defaultFormatter": "vscode.typescript-language-features"
+    // }
+    
 }

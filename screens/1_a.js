@@ -3,24 +3,21 @@ import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 import { Button } from "react-native-web";
 
-// Component chính của ứng dụng
 export default function App() {
   return (
     <View style={styles.container}>
-      {" "}
-      {/* Hiển thị hình ảnh logo */}{" "}
-      <Image style={styles.logo} source={require("../assets/Ellipse8.png")} />{" "}
-      {/* Hiển thị tiêu đề */}{" "}
+      <Image
+        style={styles.logo}
+        source={require("../assets/Ellipse8.png")}
+      />{" "}
       <Text style={styles.text1}>
         GROW {"\n"}
         YOUR BUSINESS{" "}
       </Text>{" "}
-      {/* Hiển thị mô tả */}{" "}
       <Text style={styles.text2}>
         We will help you to grow your business using {"\n"}
         online server{" "}
       </Text>{" "}
-      {/* Hiển thị nút đăng nhập và đăng ký */}{" "}
       <View style={styles.btngroup}>
         <TouchableOpacity>
           <View style={styles.btn}>
@@ -45,29 +42,29 @@ const styles = StyleSheet.create({
     backgroundImage:
       "linear-gradient(180deg, #C7F4F6 0%, #D1F4F6 25%, #E5F4F5 50%, #E5F4F5 75%, #00CCF9 100%)",
     alignItems: "center",
-    justifyContent: "space-around",
+    justifyContent: "space-around"
   },
   logo: {
     width: 140,
-    height: 140,
+    height: 140
   },
   text1: {
     fontSize: 25,
     color: "#000000",
     fontWeight: "bold",
-    textAlign: "center",
+    textAlign: "center"
   },
   text2: {
     fontSize: 15,
     color: "#000000",
     fontWeight: "bold",
-    textAlign: "center",
+    textAlign: "center"
   },
 
   btngroup: {
     flexDirection: "row",
     justifyContent: "space-around",
-    width: "100%", // Chiều rộng tối đa
+    width: "100%" // Chiều rộng tối đa
   },
   btn: {
     width: 119,
@@ -75,17 +72,17 @@ const styles = StyleSheet.create({
     backgroundColor: "#E3C000",
     borderRadius: 10,
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "center"
   },
   text3: {
     fontWeight: "bold",
     fontSize: 20,
-    color: "black",
+    color: "black"
   },
   text4: {
     fontWeight: "bold",
     fontSize: 18,
     textAlign: "center",
-    marginBottom: 100 ,
-  },
+    marginBottom: 100
+  }
 });
